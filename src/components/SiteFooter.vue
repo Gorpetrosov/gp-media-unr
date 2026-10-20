@@ -2,16 +2,18 @@
   <footer class="footer">
     <div class="container inner">
       <div>
-        <strong class="brand">{{ t('brand') }}</strong>
+        <strong class="brand">{{ SITE_NAME }}</strong>
         <p class="muted">{{ t('tagline') }}</p>
       </div>
-      <p class="muted copy">© {{ year }} {{ t('brand') }}. {{ t('footer.rights') }}</p>
+      <p class="muted copy">© {{ year }} {{ SITE_NAME }}. {{ t('footer.rights') }}</p>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { SITE_NAME } from '@/config/env'
+
 
 const { t } = useI18n();
 const year = new Date().getFullYear();

@@ -2,7 +2,6 @@ import { createI18n } from 'vue-i18n';
 
 const messages = {
   en: {
-    brand: 'Horizon Notes',
     tagline: 'Essays, notes, and dispatches in two languages.',
     nav: {
       home: 'Home',
@@ -79,7 +78,6 @@ const messages = {
     },
   },
   ru: {
-    brand: 'Horizon Notes',
     tagline: 'Эссе, заметки и репортажи на двух языках.',
     nav: {
       home: 'Главная',

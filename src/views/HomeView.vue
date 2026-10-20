@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="hero-bg" aria-hidden="true" />
       <div class="container hero-inner">
-        <p class="brand-mark">{{ t('brand') }}</p>
+        <p class="brand-mark">{{ SITE_NAME }}</p>
         <h1>{{ t('tagline') }}</h1>
         <p class="lede muted">
           {{
@@ -93,6 +93,7 @@ import AdBanner from '@/components/AdBanner.vue';
 import { listArticles, listCategories, type Article, type Taxonomy } from '@/services/api';
 import { setSeo, siteName, tLocal } from '@/utils/seo';
 import { useLocaleStore } from '@/stores/locale';
+import { SITE_NAME } from '@/config/env'
 
 const { t } = useI18n();
 const localeStore = useLocaleStore();

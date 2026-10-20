@@ -24,3 +24,12 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
+
+
+import 'vue'
+
+declare module 'vue' {
+  interface ComponentCustomProperties {
+    $siteName: string
+  }
+}

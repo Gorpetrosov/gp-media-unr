@@ -2,8 +2,7 @@
   <header class="header">
     <div class="container bar">
       <RouterLink class="brand" to="/" @mouseenter="pulse = true" @animationend="pulse = false">
-        <span class="mark" :class="{ pulse }">HN</span>
-        <span class="name">{{ t('brand') }}</span>
+        <span class="name">{{ SITE_NAME }}</span>
       </RouterLink>
 
       <nav class="nav">
@@ -49,6 +48,7 @@ import { useI18n } from 'vue-i18n';
 import { useLocaleStore } from '@/stores/locale';
 import { useThemeStore } from '@/stores/theme';
 import type { AppLocale } from '@/i18n';
+import { SITE_NAME } from '@/config/env'
 
 const { t, locale } = useI18n();
 const localeStore = useLocaleStore();
