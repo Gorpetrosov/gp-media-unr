@@ -25,12 +25,13 @@
 import { computed, onMounted, ref } from 'vue';
 import { getBanners, trackBannerClick, type Banner } from '@/services/api';
 import { adsenseConfigured } from '@/utils/adsense';
+import {ADSENSE_CLIENT, ADSENSE_SLOT} from "@/config/env.ts";
 
 const props = defineProps<{ position: 'sidebar' | 'header' | 'in_article' }>();
 
 const banner = ref<Banner | null>(null);
-const client = import.meta.env.VITE_ADSENSE_CLIENT;
-const slot = import.meta.env.VITE_ADSENSE_SLOT;
+const client = ADSENSE_CLIENT;
+const slot = ADSENSE_SLOT;
 const showAdsense = computed(() => !banner.value && adsenseConfigured());
 
 onMounted(async () => {
