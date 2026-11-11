@@ -75,8 +75,7 @@ const messages = {
 
     about: {
       title: 'About GP Media',
-      body: `
-    <p><strong>GP Media is an independent blog dedicated to technology, innovation, knowledge, and ideas.</strong></p>
+      body: `<p><strong>GP Media is an independent blog dedicated to technology, innovation, knowledge, and ideas.</strong></p>
 
     <p>The digital world is constantly evolving. New technologies emerge, industries transform, and the way we work, communicate, and live continues to change. GP Media is a place to explore these developments, share knowledge, and make complex topics easier to understand.</p>
 
