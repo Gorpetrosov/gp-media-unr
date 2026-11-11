@@ -72,9 +72,38 @@ const messages = {
     footer: {
       rights: 'All rights reserved.',
     },
+
     about: {
       title: 'About GP Media',
-      body: '<p><strong>GP Media is an independent blog dedicated to technology, innovation, knowledge, and ideas.</strong></p><p>The digital world is constantly evolving. New technologies emerge, industries transform, and the way we work, communicate, and live continues to change. GP Media is a place to explore these developments, share knowledge, and make complex topics easier to understand.</p><h2>What We Cover</h2><p>Our content explores a variety of topics, including:</p><ul><li><strong>Technology</strong> — the latest developments, digital trends, and innovations.</li><li><strong>Software Development</strong> — programming, web technologies, engineering practices, and application architecture.</li><li><strong>Artificial Intelligence</strong> — AI advancements, practical applications, and the future of intelligent systems.</li><li><strong>Science &amp; Innovation</strong> — discoveries, emerging technologies, and ideas shaping tomorrow.</li><li><strong>Business &amp; Digital World</strong> — digital transformation, startups, and the intersection of technology and business.</li><li><strong>Opinions &amp; Insights</strong> — perspectives, analysis, and thought-provoking discussions.</li></ul><h2>Our Philosophy</h2><p>We believe knowledge becomes more valuable when it is shared.</p><p>Our goal is to create useful, engaging, and accessible content that encourages curiosity, critical thinking, and continuous learning.</p><p>GP Media isn\'t just about keeping up with what\'s new. It\'s about understanding why it matters and what it could mean for the future.</p><h2>Our Motto</h2><p><strong>Explore Ideas. Understand Technology. Stay Curious.</strong></p><p>Welcome to GP Media!</p>',
+      body: `
+    <p><strong>GP Media is an independent blog dedicated to technology, innovation, knowledge, and ideas.</strong></p>
+
+    <p>The digital world is constantly evolving. New technologies emerge, industries transform, and the way we work, communicate, and live continues to change. GP Media is a place to explore these developments, share knowledge, and make complex topics easier to understand.</p>
+
+    <h2>What We Cover</h2>
+    <p>Our content explores a variety of topics, including:</p>
+
+    <ul>
+      <li><strong>Technology</strong> — the latest developments, digital trends, and innovations.</li>
+      <li><strong>Software Development</strong> — programming, web technologies, engineering practices, and application architecture.</li>
+      <li><strong>Artificial Intelligence</strong> — AI advancements, practical applications, and the future of intelligent systems.</li>
+      <li><strong>Science &amp; Innovation</strong> — discoveries, emerging technologies, and ideas shaping tomorrow.</li>
+      <li><strong>Business &amp; Digital World</strong> — digital transformation, startups, and the intersection of technology and business.</li>
+      <li><strong>Opinions &amp; Insights</strong> — perspectives, analysis, and thought-provoking discussions.</li>
+    </ul>
+
+    <h2>Our Philosophy</h2>
+    <p>We believe knowledge becomes more valuable when it is shared.</p>
+
+    <p>Our goal is to create useful, engaging, and accessible content that encourages curiosity, critical thinking, and continuous learning.</p>
+
+    <p>GP Media isn't just about keeping up with what's new. It's about understanding why it matters and what it could mean for the future.</p>
+
+    <h2>Our Motto</h2>
+    <p><strong>Explore Ideas. Understand Technology. Stay Curious.</strong></p>
+
+    <p>Welcome to GP Media!</p>
+  `,
     },
   },
   ru: {
