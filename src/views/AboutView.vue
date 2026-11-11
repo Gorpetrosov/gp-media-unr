@@ -1,7 +1,7 @@
 <template>
   <div class="container about">
     <h1>{{ t('about.title') }}</h1>
-    <p>{{ t('about.body') }}</p>
+    <div v-html="t('about.body')"></div>
   </div>
 </template>
 
