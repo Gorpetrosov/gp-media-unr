@@ -168,5 +168,8 @@ watch(
   .search-form {
     flex-direction: column;
   }
+  .select {
+    flex: 0;
+  }
 }
 </style>
