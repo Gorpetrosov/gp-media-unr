@@ -4,7 +4,7 @@ export async function fetchExchangeRates(base: string, symbols: string[]): Promi
   const key = import.meta.env.VITE_EXCHANGERATE_KEY;
   const symbolsList = symbols.join(',');
 
-  const url = `https:///v6.exchangerate-api.com/v6/${key}/latest/${symbolsList}`;
+  const url = `https://vv6.exchangerate-api.com/v6/${key}/latest/${symbolsList}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error('Rates unavailable');
   const data = await res.json();
