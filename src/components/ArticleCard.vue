@@ -24,12 +24,12 @@ import type { Article } from '@/services/api';
 import { tLocal } from '@/utils/seo';
 import { useLocaleStore } from '@/stores/locale';
 
-const props = defineProps<{ article: Article }>();
+const props = defineProps<{ article: Article, hideExcerpt?: boolean}>();
 const { t } = useI18n();
 const localeStore = useLocaleStore();
 
 const title = computed(() => tLocal(props.article.title, localeStore.locale));
-const excerpt = computed(() => tLocal(props.article.excerpt || undefined, localeStore.locale));
+const excerpt = computed(() => props.hideExcerpt ? '' : tLocal(props.article.excerpt || undefined, localeStore.locale));
 const slug = computed(() => tLocal(props.article.slug, localeStore.locale));
 const categoryName = computed(() => {
   const first = props.article.categories?.[0]?.category;

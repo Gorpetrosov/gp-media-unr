@@ -63,7 +63,7 @@
       <AdBanner position="sidebar" />
       <section v-if="related.length" class="related">
         <h2>{{ t('article.related') }}</h2>
-        <ArticleCard v-for="item in related" :key="item.id" :article="item" />
+        <ArticleCard v-for="item in related" :key="item.id" :article="item" :hideExcerpt="true" />
       </section>
     </aside>
   </div>
