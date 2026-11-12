@@ -287,6 +287,10 @@ h1 {
   gap: 1rem;
 }
 
+.related {
+  display: contents;
+  gap: 1rem;
+}
 .related h2 {
   margin: 0 0 0.75rem;
   font-family: var(--font-display);
