@@ -20,7 +20,7 @@ import { fetchExchangeRates, type Rates } from '@/services/currency';
 
 const { t } = useI18n();
 const base = import.meta.env.VITE_CURRENCY_BASE || 'USD';
-const symbols = (import.meta.env.VITE_CURRENCY_SYMBOLS || 'EUR,GBP,RUB,JPY').split(',');
+const symbols = (import.meta.env.VITE_CURRENCY_SYMBOLS || 'USD').split(',');
 
 const loading = ref(true);
 const error = ref(false);
